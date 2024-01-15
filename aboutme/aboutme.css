@@ -34,7 +34,8 @@ body, html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEYEVA%2FbtsDqPNubOp%2FYAO23Pg00man7S74JEqLO0%2Fimg.jpg");
+	background-image:
+		url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEYEVA%2FbtsDqPNubOp%2FYAO23Pg00man7S74JEqLO0%2Fimg.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
@@ -44,14 +45,14 @@ body, html {
 
 /* 흰색 아닌 검은색으로 투명도 조절 */
 .hi::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
 }
 
 .container {
@@ -83,13 +84,12 @@ body, html {
 }
 
 .content a:visited {
-	color: #555555; 
+	color: #555555;
 }
 
 .content a:hover {
-	color: #2b07f8; 
+	color: #2b07f8;
 }
-
 
 .h1 {
 	font-size: 40px;
@@ -312,10 +312,9 @@ th, td {
 	max-width: 100%;
 	padding: 20px;
 	margin: 100px;
-	margin-top:50px;
+	margin-top: 50px;
 	border: 1px solid #ccc;
 }
-
 
 .project-screenshot {
 	max-width: 100%;
@@ -337,46 +336,41 @@ th, td {
 }
 
 .content .project-info a {
-    color: #555555 !important;
+	color: #555555 !important;
 }
 
 .content .project-info a:hover {
-    color: #2b07f8 !important;
+	color: #2b07f8 !important;
 }
 
 /* 모바일 */
 @media only screen and (max-width: 768px) {
-
-    .hi {
-        height: 300px;
-    }
-
-    .col1 {
-        padding: 10px;
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .sidebar {
-        width: 100%;
-        position: static;
-        padding: 10px;
-    }
-
-    .slider-text-inner {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .skills-container,
-    .project-container {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .skills-item,
-    .project-container {
-        width: 100%;
-    }
-
+	.hi {
+		height: 300px;
+	}
+	.col1 {
+		padding: 10px;
+		margin: 0;
+		font-size: 14px;
+	}
+	.container {
+		flex-direction: column;
+	}
+	.sidebar {
+		width: 100%;
+		position: static;
+		padding: 10px;
+	}
+	.slider-text-inner {
+		padding: 10px;
+		font-size: 14px;
+		margin: 0;
+	}
+	.skills-container, .project-container {
+		padding: 10px;
+		margin: 10px;
+	}
+	.skills-item, .project-container {
+		width: 100%;
+	}
 }
