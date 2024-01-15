@@ -188,6 +188,13 @@ body, html {
 	line-height: 1.5
 }
 
+.slider-text-inner svg {
+    width: 24px; 
+    height: 24px; 
+    display: block;
+    margin: 0 auto;
+}
+
 .desc {
 	font-family: 'Nanum Myeongjo', serif;
 	margin-bottom: 100px;
