@@ -1,0 +1,345 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'NEXON Lv2 Gothic';
+	height: 100%;
+}
+
+#about, #strength, #skills, #project, #education, #certificate {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1.0s ease, transform 1.5s ease;
+}
+
+@font-face {
+	font-family: 'NEXON Lv2 Gothic';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.hi {
+	position: relative;
+	width: 100%;
+	height: 911px;
+	overflow: hidden;
+}
+
+.hi::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEYEVA%2FbtsDqPNubOp%2FYAO23Pg00man7S74JEqLO0%2Fimg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+/* 흰색 아닌 검은색으로 투명도 조절 */
+.hi::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.container-inner {
+	display: flex;
+}
+
+.col {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.col1 {
+	width: 60%;
+	padding: 50px;
+	margin-left: 300px;
+	margin-top: 70px;
+	font-family: 'NEXON Lv2 Gothic';
+	font-size: 20px;
+}
+
+.content {
+	margin-bottom: 170px;
+}
+
+.content a:visited {
+	color: #555555; 
+}
+
+.content a:hover {
+	color: #2b07f8; 
+}
+
+
+.h1 {
+	font-size: 40px;
+}
+
+/* 밑줄 바 */
+.textbottom {
+	height: 6.5px;
+	margin-top: 30px;
+	background-color: rgb(43, 7, 248);
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+.textbottom.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* 아이콘 */
+.bi-check-lg path {
+	fill: #2b07f8;
+}
+
+.content1>.h2 {
+	margin-top: 140px;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.content1>.h3 {
+	font-size: 30px;
+}
+
+.h2, .h3 {
+	opacity: 0;
+	position: relative;
+	top: 20px;
+	transition: opacity 0.5s, top 0.5s;
+}
+
+/* 큰 제목 */
+.hh11 {
+	font-size: 2.17em;
+	font-weight: bold;
+}
+
+/* 중간 제목 */
+.hh1 {
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+/* 날짜같은거 */
+.mini {
+	font-size: 14px;
+	color: #555555;
+}
+
+.content1 .h2 span.liner {
+	font-size: 1.5em;
+}
+
+.sidebar {
+	width: 250px;
+	background-color: #555555;
+	transition: background-color 0.3s ease;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	height: 100%;
+	overflow-y: auto;
+	z-index: 1;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 0;
+	display: block;
+}
+
+.slider-text-inner {
+	display: none;
+	color: #fff;
+	flex: 1;
+	padding: 50px;
+	margin-left: 300px;
+	font-size: 20px;
+	line-height: 1.5
+}
+
+.desc {
+	font-family: 'Nanum Myeongjo', serif;
+	margin-bottom: 100px;
+}
+
+.profile-container {
+	text-align: center;
+}
+
+#profile p {
+	font-size: 13px;
+}
+
+.profile-img-container {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 50px auto 20px;
+}
+
+.profile-img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.menu-container {
+	text-align: center;
+}
+
+#menu {
+	color: #fff;
+	padding: 20px;
+}
+
+.menu-item {
+	padding: 1px;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+	color: #2b07f8;
+}
+
+/* 사이드바 푸터 */
+#footer {
+	text-align: center;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.footer-item {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.footer-item svg {
+	margin-bottom: -3px;
+	margin-right: 3px;
+}
+
+th, td {
+	border: 1px solid #dbdbdb;
+	padding: 10px;
+	text-align: center;
+}
+
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 70px;
+}
+
+.skills-item {
+	width: calc(50% - 40px);
+	margin-bottom: 50px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.skills-item:hover {
+	transform: scale(1.05);
+}
+
+.skills-item:hover h3 {
+	color: #2b07f8;
+}
+
+.skills-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.skills-info {
+	padding: 10px;
+	text-align: center;
+}
+
+.project-container {
+	background-color: #fff;
+	overflow: hidden;
+	max-width: 100%;
+	max-width: 100%;
+	padding: 20px;
+	margin: 100px;
+	margin-top:50px;
+	border: 1px solid #ccc;
+}
+
+
+.project-screenshot {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.project-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.project-description {
+	font-size: 1em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.content .project-info a {
+    color: #555555 !important;
+}
+
+.content .project-info a:hover {
+    color: #2b07f8 !important;
+}
