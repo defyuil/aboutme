@@ -358,8 +358,8 @@ th, td {
 	}
 	.sidebar {
 		width: 100%;
-		height:100%;
-		position: static;
+		height:300px;
+		position: absolute;
 		padding: 10px;
 	}
 	.slider-text-inner {
