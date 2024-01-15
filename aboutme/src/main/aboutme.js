@@ -22,6 +22,7 @@ $(document).ready(function () {
 		$(this).next('.h3').animate({ opacity: 1, top: 0 }, 500);
 		});
 	});
+
 	
     updateColors();
 
@@ -65,7 +66,7 @@ $(document).ready(function () {
         }
     });
 
-	// 초키 컬러
+	// 초기 컬러
     function updateColors() {
         
         if ($(window).scrollTop() >= $(".col1").offset().top) {
