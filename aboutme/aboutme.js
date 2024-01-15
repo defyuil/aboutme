@@ -36,6 +36,7 @@ $(document).ready(function () {
             $(".sidebar").css("background-color", "#fff");
             $(".sidebar a").css("color", "#555555");
             $(".profile-container").css("color", "#555555");
+            $(".minii").css("color", "#555555");
 
             // hover 파란색
             $(".sidebar a").hover(
@@ -51,6 +52,7 @@ $(document).ready(function () {
             $(".sidebar").css("background-color", "#555555");
             $(".sidebar a").css("color", "#fff");
             $(".profile-container").css("color", "#fff");
+            $(".minii").css("color", "#fff");
 			
             // hover 파란색
             $(".sidebar a").hover(
@@ -71,10 +73,12 @@ $(document).ready(function () {
             $(".sidebar").css("background-color", "#fff");
             $(".sidebar a").css("color", "#555555");
             $(".profile-container").css("color", "#555555");
+            $(".minii").css("color", "#555555");
         } else {
             $(".sidebar").css("background-color", "#555555");
             $(".sidebar a").css("color", "#fff");
             $(".profile-container").css("color", "#fff");
+            $(".minii").css("color", "#fff");
         }
     }
     
