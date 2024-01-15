@@ -343,3 +343,40 @@ th, td {
 .content .project-info a:hover {
     color: #2b07f8 !important;
 }
+
+/* 모바일 */
+@media only screen and (max-width: 768px) {
+
+    .hi {
+        height: 300px;
+    }
+
+    .col1 {
+        padding: 10px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 10px;
+    }
+
+    .slider-text-inner {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .skills-container,
+    .project-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .skills-item,
+    .project-container {
+        width: 100%;
+    }
+
+}
