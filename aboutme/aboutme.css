@@ -347,12 +347,25 @@ th, td {
 @media only screen and (max-width: 768px) {
 	.hi {
 		height: auto;
+		margin-top: 200px;
+		margin-bottom: 50px;
 	}
 	.col1 {
+		width:80%;
 		padding: 10px;
 		margin: 0;
 		font-size: 14px;
 	}
+	
+	.content1>.h2 {
+	font-size: 30px;
+	}
+	
+	.content1>.h3 {
+	font-size: 16px;
+	}
+	
+	.h2,
 	.container {
 		flex-direction: column;
 	}
