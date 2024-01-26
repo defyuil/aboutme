@@ -83,11 +83,7 @@ body, html {
 	margin-bottom: 170px;
 }
 
-.content a:visited {
-	color: #555555;
-}
-
-.content a:hover {
+.content a {
 	color: #2b07f8;
 }
 
@@ -344,10 +340,6 @@ th, td {
 }
 
 .content .project-info a {
-	color: #555555 !important;
-}
-
-.content .project-info a:hover {
 	color: #2b07f8 !important;
 }
 
